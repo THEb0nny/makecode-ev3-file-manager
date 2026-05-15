@@ -1,0 +1,8 @@
+makecode:
+  target: ev3
+  platform: linux
+  home_url: /pxt-ev3/beta/
+theme: jekyll-theme-slate
+include:
+  - assets
+  - README.md

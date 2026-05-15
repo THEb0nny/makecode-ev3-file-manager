@@ -1,0 +1,22 @@
+{
+    "name": "file_manager",
+    "description": "",
+    "dependencies": {
+        "ev3": "*"
+    },
+    "files": [
+        "main.ts",
+        "README.md"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "target": "1.4.1042-145-g4defe27",
+        "targetId": "ev3"
+    },
+    "supportedTargets": [
+        "ev3"
+    ],
+    "preferredEditor": "tsprj"
+}
