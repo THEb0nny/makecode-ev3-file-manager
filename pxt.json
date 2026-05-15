@@ -6,11 +6,10 @@
     },
     "files": [
         "main.ts",
-        "README.md"
+        "README.md",
+        "shims.d.ts"
     ],
-    "testFiles": [
-        "test.ts"
-    ],
+    "testFiles": [],
     "targetVersions": {
         "target": "1.4.1042-145-g4defe27",
         "targetId": "ev3"
