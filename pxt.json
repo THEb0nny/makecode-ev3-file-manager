@@ -5,7 +5,8 @@
         "ev3": "*"
     },
     "files": [
-        "main.ts",
+        "file_manager.ts",
+        "file_manager.cpp",
         "README.md",
         "shims.d.ts"
     ],
