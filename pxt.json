@@ -1,18 +1,18 @@
 {
-    "name": "file_manager",
+    "name": "File_manager",
     "description": "",
     "dependencies": {
-        "ev3": "*"
+        "core": "file:../../libs/core",
+        "ev3": "file:../../libs/ev3",
+        "screen": "file:../../libs/screen"
     },
     "files": [
         "file_manager.ts",
-        "file_manager.cpp",
-        "README.md",
-        "shims.d.ts"
+        "README.md"
     ],
     "testFiles": [],
     "targetVersions": {
-        "target": "1.4.1042-145-g4defe27",
+        "target": "1.4.1042-178-ga7a9f3f",
         "targetId": "ev3"
     },
     "supportedTargets": [

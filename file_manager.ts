@@ -1,21 +1,23 @@
+// ЭТО ЗАГЛУШКИ. Они важны! 
+// На роботе они заменятся на C++, в браузере будут работать как JS.
+
 //% shim=pxt::listPrjFiles
-function getPrjs() {
-    let programs = [
-        "pxt",
-        "my amazing robot",
-    ]
-    for (let i = 1; i < 6; ++i) {
-        programs.push("Untitled-" + i);
-    }
-    return programs;
+function getPrjs(): string[] {
+    // Этот код сработает ТОЛЬКО в браузере (симуляторе)
+    return ["pxt.rbf", "test.rbf", "Untitled-1.rbf", "Untitled-1.rtf"];
 }
 
 //% shim=pxt::deletePrjFile
-function delPrj(fn: string) {
+function delPrj(fn: string): void {
+    // В браузере просто выводим в консоль
+    console.log("Delete: " + fn);
     return;
 }
 
-const programs = getPrjs()
+// А ТЕПЕРЬ ВЫЗЫВАЙ ЭТИ ФУНКЦИИ (а не pxt.list...)
+const rawPrograms = getPrjs();
+
+const programs = rawPrograms
     .filter(s =>
         s.substr(s.length - 4, 4) == ".rbf" ||
         s.substr(s.length - 4, 4) == ".rtf"
